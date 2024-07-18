@@ -1,0 +1,88 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Katalyn",
+	"patterns": [
+		{
+			"name": "comment.block.katalyn",
+			"begin": "\\(\\*",
+			"end": "\\*\\)",
+			"patterns": [
+				{
+					"include": "#nested-comment"
+				}
+			]
+		},
+		{
+			"name": "comment.line.katalyn",
+			"match": "#.*$"
+		},
+		{
+			"name": "variable.other.katalyn",
+			"match": "\\$[A-Za-z0-9_]+"
+		},
+		{
+			"name": "variable.reserved.katalyn",
+			"match": "\\$_[A-Za-z0-9_]*"
+		},
+		{
+			"name": "string.quoted.double.katalyn",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.katalyn",
+					"match": "\\\\[\"ntr]"
+				}
+			]
+		},
+		{
+			"name": "constant.numeric.float.katalyn",
+			"match": "\\b\\d+\\.\\d+\\b"
+		},
+		{
+			"name": "constant.numeric.integer.katalyn",
+			"match": "\\b\\d+\\b"
+		},
+		{
+			"name": "support.function.katalyn",
+			"match": "\\b[A-Za-z0-9_]+\\("
+		},
+		{
+			"name": "keyword.other.katalyn",
+			"match": "\\b[A-Za-z0-9_]+\\b(?!\\s*\\()"
+		},
+		{
+			"name": "keyword.declaration.table.katalyn",
+			"match": "\\btable\\b"
+		},
+		{
+			"name": "punctuation.terminator.katalyn",
+			"match": ";"
+		},
+		{
+			"name": "punctuation.accessor.katalyn",
+			"match": "[\\[\\]{}]"
+		},
+		{
+			"name": "keyword.operator.katalyn",
+			"match": "(\\*|\\^|\\/|%|\\/\\/|\\+|&|\\-|::|:|!|<|>|<=|>=|<>|!=|=|\\|\\||&&)"
+		}
+	],
+	"repository": {
+		"nested-comment": {
+			"patterns": [
+				{
+					"name": "comment.block.katalyn",
+					"begin": "\\(\\*",
+					"end": "\\*\\)",
+					"patterns": [
+						{
+							"include": "#nested-comment"
+						}
+					]
+				}
+			]
+		}
+	},
+	"scopeName": "source.katalyn"
+}
