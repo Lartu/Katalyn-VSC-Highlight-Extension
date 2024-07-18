@@ -3,6 +3,7 @@
   "displayName": "Katalyn Syntax Highlight",
   "description": "A syntax highlighter for the Katalyn programming language.",
   "version": "0.0.1",
+  "repository": "https://github.com/Lartu/Katalyn-VSC-Highlight-Extension",
   "engines": {
     "vscode": "^1.91.0"
   },
