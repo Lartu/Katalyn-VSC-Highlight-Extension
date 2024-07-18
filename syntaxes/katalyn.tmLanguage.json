@@ -36,6 +36,17 @@
 			]
 		},
 		{
+			"name": "string.string.access.katalyn",
+			"begin": "{",
+			"end": "}",
+			"patterns": [
+				{
+					"name": "constant.character.escape.katalyn",
+					"match": "\\\\[\"ntr]"
+				}
+			]
+		},
+		{
 			"name": "constant.numeric.float.katalyn",
 			"match": "\\b\\d+\\.\\d+\\b"
 		},

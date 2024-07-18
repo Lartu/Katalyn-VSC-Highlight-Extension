@@ -2,8 +2,9 @@
   "name": "katalyn-syntax-highlight",
   "displayName": "Katalyn Syntax Highlight",
   "description": "A syntax highlighter for the Katalyn programming language.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": "https://github.com/Lartu/Katalyn-VSC-Highlight-Extension",
+  "publisher": "Lartu",
   "engines": {
     "vscode": "^1.91.0"
   },
