@@ -1,0 +1,2 @@
+rm *.vsix
+vsce package
