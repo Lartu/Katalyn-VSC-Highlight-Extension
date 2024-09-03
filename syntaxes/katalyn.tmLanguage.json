@@ -31,7 +31,7 @@
 			"patterns": [
 				{
 					"name": "constant.character.escape.katalyn",
-					"match": "\\\\[\"ntr]"
+					"match": "\\\\[\\\\\"ntrbf$]"
 				}
 			]
 		},
@@ -42,7 +42,7 @@
 			"patterns": [
 				{
 					"name": "constant.character.escape.katalyn",
-					"match": "\\\\[\"ntr]"
+					"match": "\\\\[\\\\\"ntrbf$]"
 				}
 			]
 		},
